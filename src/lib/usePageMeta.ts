@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 const SITE_NAME = 'Harbourline Ship Management';
-const SITE_URL = 'https://harbourline.ae';
+const SITE_URL = 'https://www.harbourlineshipmanagement.com';
 const DEFAULT_DESC =
   'Harbourline Ship Management — trusted supplier of marine main engine, auxiliary engine, automation, navigation and radar spares. Ship management, marine repairs and worldwide dispatch from Bhavnagar, India.';
 
