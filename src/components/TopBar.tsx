@@ -20,21 +20,6 @@ export default function TopBar() {
             harbourlineshipmanagement@gmail.com
           </a>
         </div>
-        <div className="flex items-center gap-3">
-          <label className="sr-only" htmlFor="lang">Select Language</label>
-          <select
-            id="lang"
-            className="bg-transparent border border-line rounded px-2 py-1 text-[11px] outline-none hover:border-[color:var(--color-brand)] transition-colors"
-            defaultValue=""
-          >
-            <option value="" className="text-black">Select Language</option>
-            <option value="en" className="text-black">English</option>
-            <option value="hi" className="text-black">हिन्दी</option>
-            <option value="gu" className="text-black">ગુજરાતી</option>
-            <option value="ar" className="text-black">العربية</option>
-            <option value="zh" className="text-black">中文</option>
-          </select>
-        </div>
       </div>
     </div>
   );
