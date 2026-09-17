@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa6';
+import { SOCIALS as socials } from '../lib/socials';
 import { SERVICES } from '../data/services';
 
 const usefulLinks = [
@@ -19,12 +19,6 @@ const serviceLinks = SERVICES.slice(0, 6).map((s) => ({
   to: `/services/${s.slug}`,
 }));
 
-const socials = [
-  { icon: <FaWhatsapp />,    label: 'WhatsApp',  href: 'https://wa.me/919825645515' },
-  { icon: <FaFacebookF />,   label: 'Facebook',  href: 'https://www.facebook.com/' },
-  { icon: <FaInstagram />,   label: 'Instagram', href: 'https://www.instagram.com/' },
-  { icon: <FaLinkedinIn />,  label: 'LinkedIn',  href: 'https://www.linkedin.com/' },
-];
 
 const colVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -134,7 +128,9 @@ export default function Footer() {
                 </span>
                 <div className="text-mute-2 text-sm leading-relaxed">
                   <p className="font-semibold text-fg">Harbourline Ship Management</p>
-                  <p>240/A Sagar Complex,<br />Jashonath Chowk, Near Moti Baug,<br />Bhavnagar, Gujarat &mdash; 364001</p>
+                  <p>240/A Sagar Complex,<br />Jashonath Chowk, Near Moti Baug,<br />Bhavnagar, Gujarat &mdash; 364001, India</p>
+                  <p className="font-semibold text-fg mt-3">Dubai Office (UAE)</p>
+                  <p>Barjuman Office &ndash; Unit 8,<br />Near BurJuman Mall, Beside Adidas,<br />Dubai, UAE</p>
                 </div>
               </li>
               <li className="flex items-center gap-3">

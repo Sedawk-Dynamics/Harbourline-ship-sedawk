@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import ProductLink from './ProductLink';
 import { FaArrowRight } from 'react-icons/fa6';
 import HorizontalScroll from '../animations/HorizontalScroll';
 import Reveal from '../animations/Reveal';
 import SplitText from '../animations/SplitText';
 import SmartImage from './SmartImage';
-import { PRODUCTS } from '../data/products';
+import { PRODUCTS, CATALOG_URL } from '../data/products';
 
 export default function Products() {
   return (
@@ -29,6 +29,11 @@ export default function Products() {
               inspected in our Bhavnagar workshop and dispatched worldwide with full documentation.
             </p>
           </Reveal>
+          <Reveal variant="up" delay={0.4}>
+            <a href={CATALOG_URL} target="_blank" rel="noopener noreferrer" className="cta-primary mt-6 inline-flex">
+              View All Products <FaArrowRight />
+            </a>
+          </Reveal>
         </div>
       </div>
 
@@ -47,7 +52,7 @@ export default function Products() {
               t.style.setProperty('--my', `${e.clientY - r.top}px`);
             }}
           >
-            <Link to={`/products/${p.slug}`} className="block">
+            <ProductLink product={p} className="block">
               <div className="img-overlay relative h-72 overflow-hidden">
                 <SmartImage
                   src={p.image}
@@ -68,12 +73,12 @@ export default function Products() {
                 <p className="text-mute-2 text-sm leading-relaxed mb-5 line-clamp-4">{p.short}</p>
                 <div className="flex items-center justify-between">
                   <span className="pill">
-                    Read More <FaArrowRight />
+                    View Product <FaArrowRight />
                   </span>
                   <span className="text-mute text-xs tracking-[2px] uppercase">In Stock</span>
                 </div>
               </div>
-            </Link>
+            </ProductLink>
           </motion.article>
         ))}
         <div className="shrink-0 w-12" />

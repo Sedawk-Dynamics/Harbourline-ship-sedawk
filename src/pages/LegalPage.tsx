@@ -101,6 +101,7 @@ export function PrivacyPage() {
           body: [
             'Harbourline Ship Management Pvt. Ltd.',
             '240/A Sagar Complex, Jashonath Chowk, Near Moti Baug, Bhavnagar, Gujarat — 364001, India',
+            'UAE Office: Barjuman Office – Unit 8, Near BurJuman Mall, Beside Adidas, Dubai, UAE',
             'Email: harbourlineshipmanagement@gmail.com · Phone: +91 98256 45515',
           ],
         },

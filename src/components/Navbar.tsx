@@ -248,6 +248,7 @@ export default function Navbar() {
               >
                 <span>+91 98256 45515 &bull; harbourlineshipmanagement@gmail.com</span>
                 <span>Bhavnagar, Gujarat &mdash; India</span>
+                <span className="text-center">Barjuman Office &ndash; Unit 8, Near BurJuman Mall, Beside Adidas, Dubai, UAE</span>
               </motion.div>
             </div>
           </motion.div>

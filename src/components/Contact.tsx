@@ -94,10 +94,15 @@ export default function Contact() {
             </Reveal>
 
             <ul className="space-y-6 mb-10">
-              <ContactRow icon={<FaMapMarkerAlt />} label="Office" delay={0.4}>
+              <ContactRow icon={<FaMapMarkerAlt />} label="India Office" delay={0.4}>
                 240/A Sagar Complex, Jashonath Chowk,<br />
                 Near Moti Baug,<br />
-                Bhavnagar, Gujarat &mdash; 364001
+                Bhavnagar, Gujarat &mdash; 364001, India
+              </ContactRow>
+              <ContactRow icon={<FaMapMarkerAlt />} label="UAE Office" delay={0.5}>
+                Barjuman Office &ndash; Unit 8,<br />
+                Near BurJuman Mall, Beside Adidas,<br />
+                Dubai, UAE
               </ContactRow>
               <ContactRow icon={<FaPhoneAlt />} label="Phone" delay={0.55}>
                 <a href="tel:+919825645515" className="text-white hover:text-[color:var(--color-brand-light)]">+91 98256 45515</a>

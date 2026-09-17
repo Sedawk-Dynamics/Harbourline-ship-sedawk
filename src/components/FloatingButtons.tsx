@@ -1,15 +1,10 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaChevronUp } from 'react-icons/fa';
-import { FaWhatsapp, FaFacebookF, FaInstagram, FaEbay, FaSun, FaMoon } from 'react-icons/fa6';
+import { FaWhatsapp, FaSun, FaMoon } from 'react-icons/fa6';
 import { useTheme } from './ThemeProvider';
+import { SOCIALS as socials } from '../lib/socials';
 
-const socials = [
-  { icon: <FaWhatsapp />,  label: 'WhatsApp',  href: 'https://wa.me/919825645515',                                   color: '#25D366' },
-  { icon: <FaFacebookF />, label: 'Facebook',  href: 'https://www.facebook.com/search/top?q=harbourline%20ship',     color: '#1877F2' },
-  { icon: <FaInstagram />, label: 'Instagram', href: 'https://www.instagram.com/explore/search/?q=harbourline%20ship', color: '#E4405F' },
-  { icon: <FaEbay />,      label: 'eBay',      href: 'https://www.ebay.com/sch/i.html?_nkw=harbourline+ship+spares', color: '#0064D2' },
-];
 
 export default function FloatingButtons() {
   const [showTop, setShowTop] = useState(false);

@@ -86,6 +86,11 @@ export default function ProductDetailPage() {
                 >
                   Request a Quote <FaArrowRight />
                 </Link>
+                {product.catalogUrl && (
+                  <a href={product.catalogUrl} target="_blank" rel="noopener noreferrer" className="cta-ghost">
+                    View Product <FaArrowRight />
+                  </a>
+                )}
                 <a href="tel:+919825645515" className="cta-ghost">
                   Call +91 98256 45515
                 </a>

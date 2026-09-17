@@ -8,11 +8,16 @@ export type Product = {
   highlights: string[];   // bullet list on detail page
   image: string;
   fallback: string[];
+  /** Product page on the external catalogue site. */
+  catalogUrl?: string;
 };
+
+export const CATALOG_URL = 'https://product.harbourlineshipmanagement.com/products/';
 
 export const PRODUCTS: Product[] = [
   {
     slug: 'automation',
+    catalogUrl: 'https://product.harbourlineshipmanagement.com/products/automation/',
     title: 'Automation',
     short:
       'Engine room automation, alarm and monitoring panels, PLC-driven control systems, remote stations and bridge integration units sourced from established marine brands and supported by our technical team.',
@@ -34,6 +39,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'auxiliary-engine-4-stroke',
+    catalogUrl: 'https://product.harbourlineshipmanagement.com/products/auxiliary-engine-4-stroke/',
     title: 'Auxiliary Engine & Spares (4 Stroke)',
     short:
       'Tested 4-stroke auxiliary engine spares for Yanmar, Daihatsu, Wartsila, MAN and Caterpillar generator sets — keeping onboard power, hotel load and cargo handling running without interruption.',
@@ -55,6 +61,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'main-engine-2-stroke',
+    catalogUrl: 'https://product.harbourlineshipmanagement.com/products/main-engine-2-stroke/',
     title: 'Main Engine (2 Stroke)',
     short:
       'Genuine and reconditioned 2-stroke main engine spares for MAN B&W, Sulzer, Wartsila and Mitsubishi propulsion units — pistons, liners, cylinder covers, fuel pumps, turbocharger components and complete overhaul kits, every item inspected before dispatch.',

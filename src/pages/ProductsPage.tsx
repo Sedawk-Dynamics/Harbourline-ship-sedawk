@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import ProductLink from '../components/ProductLink';
 import { motion } from 'framer-motion';
 import { FaArrowRight } from 'react-icons/fa6';
 import PageShell from './PageShell';
@@ -43,7 +43,7 @@ export default function ProductsPage() {
                 transition={{ duration: 0.55, delay: i * 0.06 }}
                 className="card-ring rounded-2xl overflow-hidden surface-2 border border-line group"
               >
-                <Link to={`/products/${p.slug}`} className="block">
+                <ProductLink product={p} className="block">
                   <div className="img-overlay relative h-64 overflow-hidden">
                     <SmartImage
                       src={p.image}
@@ -60,10 +60,10 @@ export default function ProductsPage() {
                   <div className="p-6">
                     <p className="text-mute-2 text-sm leading-relaxed mb-5 line-clamp-3">{p.short}</p>
                     <span className="inline-flex items-center gap-2 text-[color:var(--color-brand-light)] font-semibold text-sm group-hover:gap-3 transition-all">
-                      View Details <FaArrowRight />
+                      View Product <FaArrowRight />
                     </span>
                   </div>
-                </Link>
+                </ProductLink>
               </motion.article>
             ))}
           </div>

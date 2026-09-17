@@ -7,7 +7,12 @@ export default function TopBar() {
         <div className="flex items-center gap-8 flex-wrap">
           <span className="flex items-center gap-2">
             <FaMapMarkerAlt className="text-[color:var(--color-brand)]" />
-            Bhavnagar, Gujarat &mdash; India
+            Bhavnagar, India
+          </span>
+          <span className="text-line">|</span>
+          <span className="flex items-center gap-2">
+            <FaMapMarkerAlt className="text-[color:var(--color-brand)]" />
+            Dubai, UAE
           </span>
           <span className="text-line">|</span>
           <a href="tel:+919825645515" className="flex items-center gap-2 hover:text-[color:var(--color-brand-light)] transition-colors">
