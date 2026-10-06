@@ -1,5 +1,14 @@
 import { IMG } from '../lib/images';
 
+/** Product photography served from /public. */
+const LOCAL = {
+  automation:   '/automation.avif',
+  auxEngine:    '/air-compressor-spare-parts-500x500-1000x1000.jpg',
+  mainEngine:   '/Two-stroke-engine-what-it-is-and-how-it-works.jpg',
+  radar:        '/sophisticated-radar-screen-illuminates-dimly-lit-ships-bridge-aiding-maritime-navigation-concept-maritime-technology-radar-navigation-ship39s-bridge-dim-lighting-navigation-aid_918839-77706.avif',
+  shipMachine:  '/ship-machinary.jpg',
+};
+
 export type Product = {
   slug: string;
   title: string;
@@ -34,8 +43,8 @@ export const PRODUCTS: Product[] = [
       'Safety, shutdown and overspeed panels',
       'I/O cards, HMI panels and control PCBs',
     ],
-    image: IMG.automation,
-    fallback: [IMG.pcb, IMG.fallbackNavigation],
+    image: LOCAL.automation,
+    fallback: [IMG.automation, IMG.pcb, IMG.fallbackNavigation],
   },
   {
     slug: 'auxiliary-engine-4-stroke',
@@ -56,8 +65,8 @@ export const PRODUCTS: Product[] = [
       'Governors, actuators and overspeed trips',
       'Turbocharger rotors, nozzle rings and bearings',
     ],
-    image: IMG.engineRoom,
-    fallback: [IMG.inspection, IMG.fallbackEngine],
+    image: LOCAL.auxEngine,
+    fallback: [IMG.engineRoom, IMG.inspection, IMG.fallbackEngine],
   },
   {
     slug: 'main-engine-2-stroke',
@@ -78,8 +87,8 @@ export const PRODUCTS: Product[] = [
       'Main bearings, crosshead bearings and guide shoes',
       'Complete overhaul kits with gaskets and seals',
     ],
-    image: IMG.twoStrokeEngine,
-    fallback: [IMG.fallbackEngine, IMG.shipRepair],
+    image: LOCAL.mainEngine,
+    fallback: [IMG.twoStrokeEngine, IMG.fallbackEngine, IMG.shipRepair],
   },
   {
     slug: 'marine-radar-and-navigation-equipment',
@@ -99,8 +108,8 @@ export const PRODUCTS: Product[] = [
       'GPS, AIS and DGPS receivers',
       'Speed logs, echo sounders and GMDSS equipment',
     ],
-    image: IMG.radarTower,
-    fallback: [IMG.navigation, IMG.fallbackNavigation],
+    image: LOCAL.radar,
+    fallback: [IMG.radarTower, IMG.navigation, IMG.fallbackNavigation],
   },
   {
     slug: 'ship-machinery',
@@ -120,8 +129,8 @@ export const PRODUCTS: Product[] = [
       'Steering gear and hydraulic power packs',
       'Deck machinery — winches, windlasses, capstans',
     ],
-    image: IMG.shipMachine,
-    fallback: [IMG.shipRepair, IMG.fallbackEngine],
+    image: LOCAL.shipMachine,
+    fallback: [IMG.shipMachine, IMG.shipRepair, IMG.fallbackEngine],
   },
 ];
 
