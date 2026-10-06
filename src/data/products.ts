@@ -3,8 +3,8 @@ import { IMG } from '../lib/images';
 /** Product photography served from /public. */
 const LOCAL = {
   automation:   '/automation.avif',
-  auxEngine:    '/air-compressor-spare-parts-500x500-1000x1000.jpg',
-  mainEngine:   '/Two-stroke-engine-what-it-is-and-how-it-works.jpg',
+  auxEngine:    '/4-strokes.jpeg',
+  mainEngine:   '/2-stokes.jpeg',
   radar:        '/sophisticated-radar-screen-illuminates-dimly-lit-ships-bridge-aiding-maritime-navigation-concept-maritime-technology-radar-navigation-ship39s-bridge-dim-lighting-navigation-aid_918839-77706.avif',
   shipMachine:  '/ship-machinary.jpg',
 };
