@@ -92,7 +92,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'marine-radar-and-navigation-equipment',
-    catalogUrl: 'https://product.harbourlineshipmanagement.com/product-category/marine-radar-navigation-eqiupment/',
+    catalogUrl: 'https://product.harbourlineshipmanagement.com/marine-radar-navigation-eqiupment/',
     title: 'Marine Radar & Navigation Equipment',
     short:
       'Complete bridge packages — X-band and S-band radar systems, scanners, transceivers and magnetrons alongside gyrocompasses, autopilots, ECDIS, GPS, AIS, speed logs and echo sounders from Furuno, JRC, Sperry, Tokimec and Anschutz.',
@@ -114,7 +114,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'ship-machinery',
-    catalogUrl: 'https://product.harbourlineshipmanagement.com/product-category/ship-machinery/',
+    catalogUrl: 'https://product.harbourlineshipmanagement.com/ship-machinery/',
     title: 'Ship Machinery',
     short:
       'Complete ship machinery solutions — pumps, purifiers, compressors, heat exchangers, steering gear, deck equipment and propulsion components, supplied new or reconditioned for all major marine brands.',
